@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+<script>
+function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+function check() {
+	var error = getParameterByName('error');
+	if(error == 1)
+		document.getElementById('commonerror').innerText = "Invalid Username/Password";
+}
+
+function validate() {
+	var uname = document.getElementById("uname").value;
+	if(uname.length < 3) {
+		document.getElementById("unameerr").innerText = "Username is incorrect";
+		return false;
+	}
+	return true;	
+}
+</script>
+<style>
+#unameerr, #commonerror {
+	color: red;
+	font-weight: bold;
+}
+</style>
+</head>
+<body onload="check()">
+<div id="commonerror"></div>
+<form onsubmit="return validate()" action="login.cdac">
+	Enter username : <input type="text" name="uname" id="uname" />
+	<div id="unameerr"></div>
+	Enter password : <input type="password" name="pass" /> <br />
+	<button type="submit">Login</button>
+</form>
+</body>
+</html>

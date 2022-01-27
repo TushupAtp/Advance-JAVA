@@ -1,0 +1,38 @@
+React, Angular, Vue, ...
+- MVC frameworks
+
+Hibernate, Toplink, Eclipselink, DataNucleus, ...
+- ORM frameworks
+
+Java, C#, C++, Python, ...
+- OOP
+
+Getting started with Hibernate
+-------------------------------
+- Hibernate is a third-party framework which has to be downloaded first
+  - There are 2 ways we can do this:
+    1. We manually go an download Hibernate framework and include the same in our project
+       (https://sourceforge.net/projects/hibernate/files/hibernate-orm/5.6.3.Final/hibernate-release-5.6.3.Final.zip/download)
+    2. We use Maven to download Hibernate framework and configure the required libraries in pom.xml file
+
+- Coding Steps
+  - 1. Write an Entity class which will be mapped to some table in the Database
+  - 2. We need to configure which Database are we going to use in our project (Oracle/MySQL/Sybase/...)
+       This configuration is done in META-INF/persistence.xml file along with few other settings
+       Create the above folder META-INF inside src/main/resources in the Maven Project
+  - 3. Now we will write the code for performing any SQL operation we wish (insert/update/delete/select)
+
+
+TODO:
+- Read about Hibernate and JPA
+- What are the benefits of using an ORM
+- What are steps to use Hibernate in a project
+- Read about associations (one to one, one to many, many to one, many to many)
+
+
+About Maven
+-----------
+- Maven is basically a Project Management Tool
+- Also commonly known as a Build Tool
+
+

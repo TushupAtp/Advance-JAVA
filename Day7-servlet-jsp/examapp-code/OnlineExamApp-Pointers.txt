@@ -1,0 +1,29 @@
+Steps
+1. We created Question and Option class first
+2. Then we created QuestionBank class where we will maintain the questions for
+   various subjects
+3. Next we create QuestionBankLoader class which as of now will load questions
+   for Java subject
+
+Then we moved on to Servlet/JSP
+1. We created one Servlet (QuestionLoaderServlet) whose job is to:
+   a. load one question at a time
+   b. store that question in the session
+   c. redirect the control to a JSP for further processing
+
+2. Then we created a JSP (viewQuestion.jsp) where we:
+   a. Wrote the code to read the Question from the session
+   b. Display the Question along with it's options
+      i. For each option we had to display a radio button for the user to select the answer
+   c. Provide link to navigate to the Servlet for fetching the next question
+      i. We had to replace the hyperlink with a form because we had to submit 
+         the value of the radio button
+
+3. Next wecreated one more Servlet (CalculateScoreServlet) which will:
+      i. read the value of the radio button from which we will come to know which option was selected
+      ii. read the Question stored in the Session for which the user submitted the answer
+      iii. if the selected option is the the right answer, 
+           then increment the score and store it in the session
+
+4. Finally we created a result page (result.jsp) to display the score of the user.
+      

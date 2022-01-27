@@ -1,0 +1,52 @@
+How does HttpSession works? THEORY
+
+
+How is the lifecycle of a JSP different from a Servlet? THEORY
+
+
+What are the different types of elements in JSP? aka Scriptlets, expressions and others THEORY
+
+How to override life cycle methods of a JSP? PRACTICAL
+
+How to execute a JSP if we have saved it in the WEB-INF folder? PRACTICAL
+
+
+How to execute the JSP with a different name instead of the default file name? PRACTICAL
+
+
+How to load a JSP on startup? PRACTICAL
+Explain the 4 scopes(page, request, session, application) available in JSP PRACTICAL
+There are 9 implicit objects in Jsp. Which are they? THEORY
+What are error pages in JSP? PRACTICAL
+
+Difference between forward and redirect THEORY
+
+
+DIfference between static include and dynamic include.
+
+Demonstrate the same using Servlets as well as JSP PRACTICAL
+
+
+Difference between forward and include. PRACTICAL
+
+Difference between RequestDispather.forward and <jsp:forward /> PRACTICAL
+
+What is it that we can do using JSP but cannot be done using Servlet. OR
+What is it that we can do using Servlet but cannot be done using JSP THEORY
+
+What is PageContext. Why to use it. When to use it. PRACTICAL
+
+Explain the structure of the generated Servlet from a JSP. THEORY
+
+Which are the different versions of Servlets and JSP and also which version of Tomcat
+is it compliant with. THEORY
+
+How to configure session timeout in Servlet/JSP.  PRACTICAL
+
+How to manually destroy a session. PRACTICAL
+
+What are Filters. How are they different from Listeners. THEORY
+
+Demonstrate a small example on Filters. PRACTICAL
+
+Demonstrate a small example on as many listeners as you can. PRACTICAL

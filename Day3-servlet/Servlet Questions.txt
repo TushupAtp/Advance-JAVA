@@ -1,0 +1,40 @@
+What is a Servlet Container and how is it different from a Web Server?
+
+What is Servlet interface. What is GenericServlet. What is HttpServlet?
+
+What is ServletContext ?
+
+What is the life cycle of a Servlet?
+
+What is the role of web.xml file?
+
+What is load-on-startup in web.xml file?
+
+What is the role of ServletException and IOException used in the signature of
+         service/doGet/doPost method?
+
+Why is Servlet better than conventional CGI?
+
+What is SingleThreadModel interface?
+
+Demonstrate how to load a servlet on startup and what will be the difference in the lifecycle of that Servlet
+
+Demonstrate a small example on ServletContext
+
+Demonstrate a small example on ServletConfig
+
+What are Http error codes and how to use them?
+
+Demonstrate various different methods of both HttpServletRequest and HttpServletResponse
+
+Demonstrate an example on getLastModified(HttpServletRequest req) method of HttpServlet?
+
+Demonstrate How to configure error pages in web.xml
+
+What are Http Headers and how are they sent from the client to server and vice-versa? 
+
+Differences between GET and POST? 
+
+What is redirect method and how is it different from forward method 
+
+What is HttpSession and how it works? 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>OneMoreWebApp</display-name>
+
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+   </welcome-file-list>
+
+  <!-- <error-page>
+  	<error-code>404</error-code>
+  	<location>/pagenotfound.html</location>
+  </error-page> -->
+  
+  <servlet>
+  	<servlet-name>h</servlet-name>
+  	<servlet-class>com.cdac.servlet.HelloServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>h</servlet-name>
+  	<url-pattern>/hello.mj</url-pattern>
+  </servlet-mapping>
+
+	<!-- <servlet>
+		<servlet-name>w</servlet-name>
+		<jsp-file>/welcome.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>w</servlet-name>
+		<url-pattern>/welcome.exe</url-pattern>
+	</servlet-mapping> -->
+</web-app>

@@ -1,0 +1,32 @@
+<%      %>  Scriptlet
+<%=     %>  Expression
+<%@     %>  Directives
+<%!     %>  Declaration
+<%--  --%>  Comment
+
+hello.jsp
+==========
+<html><body>
+Today's Date is <%= new Date() %>
+</body></html>
+
+What we have understood is:
+- JSP get's translated into a Servlet in the background, 
+  which is then compiled and loaded to generate the response
+- In the generated Servlet, whatever code we write in a JSP get's copied into a method by the name
+  _jspService(...)
+  
+  The generated Servlet for the above code might look like this:
+  public class hello_jsp extends HttpServlet {
+    
+    public void _jspService(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+      response.setContentType("text/html");
+      JspWriter out = response.getWriter();
+      out.write("<html><body>");
+      out.write("Today's Date is " + new Date());
+      out.write("</body></html>");
+    }    
+  }
+
+

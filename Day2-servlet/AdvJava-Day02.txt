@@ -1,0 +1,29 @@
+there are two types of streams:
+1. binary streams
+2. character streams
+
+binary streams
+- reading/writing binary data
+
+character streams
+- reading/writing character data
+
+java.io provides support for both the types of streams:
+for ex:
+ FileInputStream, FileOutputStream, .... (binary) 
+ -> jpg, pdf, doc, mp3, mp4, .......
+ FileReader, FileWriter, ... (char)
+ -> txt, html, xml, json, ...
+
+TODO:
+Design one form which will take two numbers as an input. 
+Then write a servlet will read those numbers, add/sub them and display the result.
+
+Design one login form which will take username and password as input.
+Then write a servlet which will read the same and perform the following cases:
+- if the user is a valid user, show a welcome message
+- if the user is an invalid user, show an error message
+
+for the time being hardcode the username/password in the servlet for valid user:
+- if(username.equals("majrul") && password.equals("123"))
+ 

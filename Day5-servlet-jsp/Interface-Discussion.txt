@@ -1,0 +1,39 @@
+Assumption:
+Majrul is an Enterpreneur
+
+Idea:
+Using IoT, i will be able to control all my devices at Home 
+remotely from anywhere in the world
+
+Action Plan:
+Hire some Developers
+- 3 Developers
+  - Implementing IoT for TV
+  - Implementing IoT for AC
+  - Implementing IoT for Washing Machine & Refrigerator
+
+Task:
+ - Switch on/off my device
+
+To achieve the above task:
+I need to create a contract/standard which all the developers will follow
+
+interface Sensor {
+  void switchOn();
+  void switchOff();
+}
+
+class TVSensor implements Sensor {
+
+}
+
+class ACSensor implements Sensor {
+
+}
+
+
+
+
+
+
+
