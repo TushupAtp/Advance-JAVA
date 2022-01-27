@@ -1,0 +1,63 @@
+web server
+ftp server
+database server
+mail (smtp/pop3) server
+
+
+suppose i need a website of my own, for ex: majrul.com
+
+1.  i need a web server which will be runing 24*7
+    -> this server needs a static ip and DNS mapped to it 
+    -> since investing in a server is expensive, we use a business model
+       called as Web Hosting
+    -> also now a days we are using another business model for running
+       web applications called as cloud computing (aws/azure/gcp)
+
+a website is made up of client side as well as server side code:
+   -> client side code is made up of HTML, CSS and JS
+   -> server side code is made up of technologies like Servlet/JSP/ASP/PHP, ...
+
+
+examples of web servers:
+Apache Web Server
+Microsoft IIS
+Nginx
+
+The above 3 popular web servers don't support Java technology directly
+
+But through a server side extension, we can enable support for Java technology
+These server side extensions are traditionally called as Web containers, for ex:
+Apache Tomcat
+JBoss
+Weblogic
+Websphere
+Glassfish
+
+These web containers have all the features present in a Web server, but additionally
+they support Java technology (Servlet/JSP)
+
+So it's also possible that we don't use a separate web server in our setup, for ex:
+we can install Tomcat and use it like a web server too
+But in live applications, a server + container combination is generally used
+
+for ex:
+apache web server + apache tomcat
+microsoft iis + apache tomcat
+nginx + apache tomcat
+
+in large enterprises, multiple technologies are used:
+-> the home loan application maybe developed using java tech
+-> the car loan application maybe developed using python tech
+
+TODO:
+1. role of web/http server
+2. difference between web server and web container
+3. what is the role of servlet/jsp
+4. what are the steps to write and run a servlet program
+5. what is genericservlet, httpservlet, doGet/doPost, ...
+6. what is request/response style web development
+7. what is role of http protocol
+8. what are the various methods of http protocol (get/post/...)
+
+
+
